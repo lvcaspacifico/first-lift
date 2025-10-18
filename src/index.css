@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+  --color-fl-blue: #3772C9; 
+}
+
+@keyframes highlight-fill {
+  0% {
+    background-size: 0% 100%;
+    color: white;
+  }
+  100% {
+    background-size: 100% 100%;
+    color: var(--color-fl-blue);
+  }
+}
+
+.marker-animate {
+  background-image: linear-gradient(to right, white 100%, white 100%);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 0% 100%;
+  animation: highlight-fill .5s ease-out forwards;
+  display: inline-block;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+  transition: color 0.3s ease;
+}
+
