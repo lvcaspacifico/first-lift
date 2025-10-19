@@ -48,16 +48,16 @@ export default function CommunitySection() {
 
         <div className="grid mobile:grid-cols-1 desktop:grid-cols-4 gap-6">
           {posts.map((post, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg overflow-hidden">
-              <div className="w-full h-64 bg-white flex items-center justify-center">
-              <img src={post.image} alt={post.caption} className="w-full h-64 object-cover border-1 border-gray-300 rounded-lg" />
+            <div key={index} className="bg-white rounded-lg overflow-hidden desktop:p-4 mobile:p-6">
+              <div className="w-full aspect-square bg-white flex items-center justify-center rounded-lg">
+                <img src={post.image} alt={post.caption} className="w-full h-full object-cover rounded-lg border-1 border-gray-300" />
               </div>
               <div className="p-4">
                 <div className='flex flex-row justify-between mb-1'>
-                  <p className="text-sm italic text-black">@fulano</p>
-                  <p className="text-sm font-bold text-black"><span className='hover:cursor-pointer'>❤️</span> {post.likes}</p>
+                  <p className="text-sm italic text-black">@firstlift</p>
+                  <p className="desktop:text-sm mobile:text-md font-bold text-black"><span className='hover:cursor-pointer'>❤️</span> {post.likes}</p>
                 </div>
-                <p className="text-sm text-black">{post.caption}</p>
+                <p className="desktop:text-sm mobile:text-md text-black">{post.caption}</p>
               </div>
             </div>
           ))}

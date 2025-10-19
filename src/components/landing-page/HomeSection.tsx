@@ -17,8 +17,8 @@ export default function HomeSection() {
         }}
       />
       
-      <div className="max-w-7xl mx-auto px-4 desktop:px-8 desktop:grid-cols-2 desktop:text-left mobile:text-center grid mobile:grid-cols-1 mobile:px-6 mobile:mt-10 gap-12 items-center relative z-10">
-        <div>
+      <div className="max-w-7xl mx-auto px-4 desktop:px-8 desktop:grid desktop:grid-cols-2 desktop:text-left mobile:text-center mobile:flex mobile:flex-col mobile:px-6 mobile:py-10 gap-12 items-center relative z-10">
+        <div className="desktop:order-1 mobile:order-2 desktop:m-0 mobile:mt-2">
           <h1 className="text-4xl mobile:text-5xl desktop:text-6xl font-bold mb-6">
             Your <span className='marker-animate'>First Lift</span> to the Skies Starts Here
           </h1>
@@ -27,15 +27,16 @@ export default function HomeSection() {
           </p>
           <a
             href="#contact"
-            className="inline-block bg-white text-fl-blue px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300  mobile:mb-4"
+            className="inline-block bg-white text-fl-blue px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300 mobile:mb-4"
           >
             Book Your Discovery Flight
           </a>
         </div>
-        <div>
+        <div className="mobile:order-1 w-full desktop:z-0 mobile:-z-1 desktop:brightness-75 mobile:brightness-50">
           <div className="w-full mobile:h-64 desktop:h-96 bg-white bg-opacity-10 rounded-lg flex items-center justify-center">
-            <img src={heroImage} alt="FirstLift Aircraft" className="w-full rounded-lg shadow-2xl" />
-        </div>
+            <img src={heroImage} alt="FirstLift Aircraft"
+            className="w-full rounded-lg shadow-2xl " />
+          </div>
         </div>
       </div>
     </section>
