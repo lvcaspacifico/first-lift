@@ -186,7 +186,7 @@ export default function DashboardPage() {
                       </div>
                     </td>
                     <td className="py-3 px-4">
-                      <span className="inline-block bg-fl-blue bg-opacity-10 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      <span className="inline-block bg-fl-blue desktop:px-3 desktop:rounded-full desktop:py-1 mobile:px-3 mobile:rounded-2xl text-white px-3 py-1  text-sm font-semibold">
                         {lead.programInterest}
                       </span>
                     </td>

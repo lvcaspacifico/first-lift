@@ -1,7 +1,7 @@
 import heroImage from '../../assets/base.png';
 import bannerImage from '../../assets/banner-fl-image.jpg'
 
-export default function HeroSection() {
+export default function HomeSection() {
   return (
     <section id="home" 
     className="min-h-screen flex items-center justify-center text-white pt-20 relative"
@@ -17,7 +17,7 @@ export default function HeroSection() {
         }}
       />
       
-      <div className="max-w-7xl mx-auto px-4 mobile:px-6 desktop:px-8 grid mobile:grid-cols-1 desktop:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 desktop:px-8 desktop:grid-cols-2 desktop:text-left mobile:text-center grid mobile:grid-cols-1 mobile:px-6 mobile:mt-10 gap-12 items-center relative z-10">
         <div>
           <h1 className="text-4xl mobile:text-5xl desktop:text-6xl font-bold mb-6">
             Your <span className='marker-animate'>First Lift</span> to the Skies Starts Here
@@ -27,7 +27,7 @@ export default function HeroSection() {
           </p>
           <a
             href="#contact"
-            className="inline-block bg-white text-fl-blue px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+            className="inline-block bg-white text-fl-blue px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300  mobile:mb-4"
           >
             Book Your Discovery Flight
           </a>

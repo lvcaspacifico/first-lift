@@ -27,7 +27,7 @@ export function Navbar() {
               Community
             </a>
             <a href="/#contact" className="text-white hover:text-fl-blue transition-colors duration-300">
-              Contact
+              Contact Us
             </a>
             <Link
               to="/dashboard"
@@ -50,7 +50,7 @@ export function Navbar() {
         {isOpen && (
           <div className="desktop:hidden pb-4 space-y-4">
             <a
-              href="/#home"
+              href="#home"
               onClick={() => setIsOpen(false)}
               className="block text-white hover:text-fl-blue transition-colors duration-300 py-2"
             >
@@ -82,7 +82,7 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
               className="block text-white hover:text-fl-blue transition-colors duration-300 py-2"
             >
-              Contact
+              Contact Us
             </a>
             <Link
               to="/dashboard"

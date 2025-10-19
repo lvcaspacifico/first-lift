@@ -50,11 +50,10 @@ export default function FormsSection() {
         </div>
 
         {isSuccess && (
-          <div className="mb-6 p-4 bg-fl-blue bg-opacity-10 border border-fl-blue rounded-lg text-fl-blue text-center">
+         <div className="mb-6 p-4 bg-fl-blue bg-opacity-10 border border-fl-blue rounded-lg text-white shadow desktop:text-xl mobile:text-lg text-center">
             Thank you! We'll be in touch soon.
           </div>
         )}
-
         <form onSubmit={handleSubmit} className="space-y-6 bg-gray-50 p-8 rounded-lg">
           <div>
             <label htmlFor="fullName" className="block text-sm font-semibold text-gray-700 mb-2">

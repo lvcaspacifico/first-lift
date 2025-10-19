@@ -1,17 +1,17 @@
-import FormsSection from "../components/landing-page/FormsSection";
-import HeroSection from "../components/landing-page/HeroSection";
+import HomeSection from "../components/landing-page/HomeSection";
 import ProgramsSection from "../components/landing-page/ProgramsSection";
-import SocialSection from "../components/landing-page/SocialSection";
 import TestimonialsSection from "../components/landing-page/TestimonialsSection";
+import CommunitySection from "../components/landing-page/CommunitySection";
+import ContactUsSection from "../components/landing-page/ContactUsSection";
 
 export function LandingPage(){
     return (
         <>
-        <HeroSection/>
+        <HomeSection/>
         <ProgramsSection/>
         <TestimonialsSection/>
-        <SocialSection/>
-        <FormsSection/>
+        <CommunitySection/>
+        <ContactUsSection/>
         </>
     )
 }

@@ -5,7 +5,7 @@ import post2 from '../../assets/posts/post3.png';
 import post3 from '../../assets/posts/post2.png';
 import post4 from '../../assets/posts/post4.png';
 
-export default function SocialSection() {
+export default function CommunitySection() {
 
   const posts = [
     {

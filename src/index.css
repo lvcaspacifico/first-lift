@@ -2,7 +2,7 @@
 
 @theme {
   --breakpoint-mobile: 375px;
-  --breakpoint-desktop: 1440px;
+  --breakpoint-desktop: 1024px;
   --color-fl-blue: #3772C9; 
 }
 
